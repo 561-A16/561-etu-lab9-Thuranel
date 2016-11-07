@@ -1,0 +1,9 @@
+FROM microsoft/dotnet:latest
+
+WORKDIR /src
+
+ENV ASPNETCORE_URLS http://+:5000
+
+CMD ["dotnet", "webapp.dll"]
+
+COPY /src /src
